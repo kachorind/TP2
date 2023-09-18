@@ -6,7 +6,7 @@
 
 import random
 
-While True:
+while True:
     aleatoire = random.randint(0,100)
     essai = 0
 
