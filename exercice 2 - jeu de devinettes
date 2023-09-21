@@ -7,7 +7,7 @@ import random
 def bornes():
     borne_minimale = int(input("Entrez votre borne minimale: "))
     borne_maximale = int(input("Entrez votre borne maximale : "))
-    return = borne_minimale, borne_maximale
+    return borne_minimale, borne_maximale
 
 while True:
     borne_minimale, borne_maximale = bornes()
