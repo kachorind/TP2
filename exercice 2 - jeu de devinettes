@@ -23,17 +23,16 @@ while True:
 
         # Nombre d’essais augmente
         essai += 1
-     
+
         if aleatoire > chiffre:
-            print("Mauvaise réponse! Votre chiffre est plus grand.")
-     
+            print("Mauvaise réponse! Votre chiffre est plus petit que le chiffre recherché.")
+
         elif aleatoire < chiffre:
-            print("Mauvaise réponse! Votre chiffre est plus petit.")
-      
+            print("Mauvaise réponse! Votre chiffre est plus grand que le chiffre recherché.")
+
         else:
             print(f"Bravo! Bonne réponse.\nVous avez réussi en: {essai} essai(s).")
             boucle_jeu = False
-
 
     # Je demande si l’utilisateur veut jouer une autre partie
     partie2 = input("Souhaitez-vous rejouer à ce jeu de devinettes? (‘O’ pour oui et ‘N’ pour non)")
@@ -45,3 +44,4 @@ while True:
     else:
         # Je continue la boucle pour une nouvelle partie
         continue
+
