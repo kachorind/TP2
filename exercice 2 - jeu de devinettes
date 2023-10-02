@@ -4,11 +4,13 @@
 
 import random
 
+# Fonction pour entrer les bornes choisis par l’utilisateur (tout en les gardant (return))
 def bornes():
     borne_minimale = int(input("Entrez votre borne minimale: "))
     borne_maximale = int(input("Entrez votre borne maximale : "))
     return borne_minimale, borne_maximale
 
+# Boucle principale du jeu
 while True:
     borne_minimale, borne_maximale = bornes()
     aleatoire = random.randint(borne_minimale, borne_maximale)
@@ -17,7 +19,7 @@ while True:
     print(f"J’ai choisi un nombre entre {borne_minimale} et {borne_maximale}. À vous de le deviner…")
     boucle_jeu = True
 
-    # Je permets à l’utilisateur de faire plusieurs essais
+    # Je permets à l’utilisateur de faire plusieurs essais à deviner le chiffre
     while boucle_jeu:
         chiffre = int(input("Entrez votre essai: "))
 
@@ -34,7 +36,7 @@ while True:
             print(f"Bravo! Bonne réponse.\nVous avez réussi en: {essai} essai(s).")
             boucle_jeu = False
 
-    # Je demande si l’utilisateur veut jouer une autre partie
+    # Je demande si l’utilisateur veut jouer une autre partie ou non
     partie2 = input("Souhaitez-vous rejouer à ce jeu de devinettes? (‘O’ pour oui et ‘N’ pour non)")
 
     if partie2.upper() == 'N':
