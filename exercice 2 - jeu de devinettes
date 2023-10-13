@@ -12,7 +12,7 @@ def bornes():
 
 partie2 = 'O'
 
-# Boucle principale du jeu
+# Boucle principale du jeu (tant que l'utilisateur ne dit pas 'N')
 while partie2.upper() != "N":
     borne_minimale, borne_maximale = bornes()
     aleatoire = random.randint(borne_minimale, borne_maximale)
