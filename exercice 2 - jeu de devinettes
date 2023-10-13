@@ -10,8 +10,10 @@ def bornes():
     borne_maximale = int(input("Entrez votre borne maximale : "))
     return borne_minimale, borne_maximale
 
+partie2 = 'O'
+
 # Boucle principale du jeu
-while True:
+while partie2.upper() != "N":
     borne_minimale, borne_maximale = bornes()
     aleatoire = random.randint(borne_minimale, borne_maximale)
     essai = 0
@@ -39,11 +41,4 @@ while True:
     # Je demande si l’utilisateur veut jouer une autre partie ou non
     partie2 = input("Souhaitez-vous rejouer à ce jeu de devinettes? (‘O’ pour oui et ‘N’ pour non)")
 
-    if partie2.upper() == 'N':
-        print("Merci et au revoir!")
-        break
-
-    else:
-        # Je continue la boucle pour une nouvelle partie
-        continue
-
+print("Merci et au revoir!")
